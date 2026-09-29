@@ -1,0 +1,748 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVIXA — AI Smart City Intelligence</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="asserts/css/index.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <i class="fas fa-city"></i>NOVIXA<span class="brand-dot">.</span>AI
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#citymap">City Map</a></li>
+          <li class="nav-item"><a class="nav-link" href="#dashboard">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="#howitworks">How It Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <a href="#contact" class="btn btn-primary d-none d-lg-inline-flex align-items-center gap-2">
+        Get Started <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero-section">
+    <div id="hero-canvas-container" class="hero-canvas-container"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="row min-vh-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-9">
+          <span class="hero-badge">
+            <i class="fas fa-bolt me-2"></i>AI-POWERED SMART CITY INTELLIGENCE
+          </span>
+          <h1 class="hero-title">
+            Building Cities That <span class="highlight">Think.</span>
+          </h1>
+          <p class="hero-desc mx-auto">
+            A living, learning metropolis powered by real-time AI. Traffic flows, energy optimizes, and citizens thrive — all orchestrated by intelligent infrastructure.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+            <a href="#solutions" class="btn btn-primary btn-lg d-inline-flex align-items-center gap-2">
+              Explore Smart AI <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#dashboard" class="btn btn-outline-light btn-lg d-inline-flex align-items-center gap-2">
+              <i class="fas fa-chart-line"></i> View City Intelligence
+            </a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="hero-stat">
+              <div class="hero-stat-value">98%</div>
+              <div class="hero-stat-label">Traffic Efficiency</div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <div class="hero-stat-value">42%</div>
+              <div class="hero-stat-label">Energy Saved</div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <div class="hero-stat-value">24/7</div>
+              <div class="hero-stat-label">AI Monitoring</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll to explore</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ===== AI SMART CITY SOLUTIONS ===== -->
+  <section id="solutions" class="solutions-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">AI SMART CITY SOLUTIONS</span>
+        <h2 class="section-title">Intelligence for Every Layer of the City</h2>
+        <p class="section-subtitle mx-auto">Six interconnected AI systems that keep your city running at peak performance.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="solution-card reveal">
+            <div class="solution-icon icon-blue"><i class="fas fa-traffic-light"></i></div>
+            <h5>Smart Traffic</h5>
+            <p>AI-managed signals and adaptive routing reduce congestion by predicting flow before it happens.</p>
+            <a href="#" class="solution-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="solution-card reveal">
+            <div class="solution-icon icon-purple"><i class="fas fa-bolt"></i></div>
+            <h5>Smart Energy</h5>
+            <p>Dynamic grid balancing and demand forecasting cut waste and integrate renewables seamlessly.</p>
+            <a href="#" class="solution-link purple">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="solution-card reveal">
+            <div class="solution-icon icon-cyan"><i class="fas fa-shield-halved"></i></div>
+            <h5>Public Safety</h5>
+            <p>Predictive analytics and real-time anomaly detection keep citizens safe without surveillance overreach.</p>
+            <a href="#" class="solution-link cyan">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="solution-card reveal">
+            <div class="solution-icon icon-green"><i class="fas fa-recycle"></i></div>
+            <h5>Waste Management</h5>
+            <p>Smart routing and fill-level sensors optimize collection schedules and reduce fleet emissions.</p>
+            <a href="#" class="solution-link green">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="solution-card reveal">
+            <div class="solution-icon icon-pink"><i class="fas fa-heart-pulse"></i></div>
+            <h5>Smart Healthcare</h5>
+            <p>Connected response systems and predictive triage shorten emergency response across the city.</p>
+            <a href="#" class="solution-link pink">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="solution-card reveal">
+            <div class="solution-icon icon-orange"><i class="fas fa-bus"></i></div>
+            <h5>Intelligent Transportation</h5>
+            <p>Multi-modal AI planning connects buses, trains, and micro-mobility into one smooth experience.</p>
+            <a href="#" class="solution-link orange">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3D INTERACTIVE CITY MAP ===== -->
+  <section id="citymap" class="citymap-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">INTERACTIVE CITY MAP</span>
+        <h2 class="section-title">Explore Every Intelligent Zone</h2>
+        <p class="section-subtitle mx-auto">Click any glowing zone to see what the AI is doing right now.</p>
+      </div>
+
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-7">
+          <div class="citymap-visual reveal">
+            <div id="citymap-canvas" class="citymap-canvas"></div>
+            <div class="citymap-legend">
+              <span><span class="dot dot-blue"></span> Traffic</span>
+              <span><span class="dot dot-purple"></span> Energy</span>
+              <span><span class="dot dot-cyan"></span> Safety</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="citymap-panel reveal">
+            <div class="panel-header">
+              <span class="panel-tag" id="zoneTag">ZONE 01</span>
+              <h3 class="panel-title" id="zoneTitle">Downtown Core</h3>
+            </div>
+            <p class="panel-desc" id="zoneDesc">
+              Adaptive traffic AI and connected intersections dynamically re-route vehicles to keep the central district flowing at peak hours.
+            </p>
+            <div class="panel-stats">
+              <div class="panel-stat">
+                <span class="panel-stat-value" id="zoneStat1">98%</span>
+                <span class="panel-stat-label" id="zoneStat1Label">Flow Efficiency</span>
+              </div>
+              <div class="panel-stat">
+                <span class="panel-stat-value" id="zoneStat2">42%</span>
+                <span class="panel-stat-label" id="zoneStat2Label">Congestion Drop</span>
+              </div>
+            </div>
+            <div class="panel-zones">
+              <button class="zone-btn active" data-zone="downtown"><i class="fas fa-building"></i> Downtown</button>
+              <button class="zone-btn" data-zone="industrial"><i class="fas fa-industry"></i> Industrial</button>
+              <button class="zone-btn" data-zone="residential"><i class="fas fa-home"></i> Residential</button>
+              <button class="zone-btn" data-zone="waterfront"><i class="fas fa-water"></i> Waterfront</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REAL-TIME CITY DASHBOARD ===== -->
+  <section id="dashboard" class="dashboard-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">LIVE CITY INTELLIGENCE</span>
+        <h2 class="section-title">Real-Time AI Dashboard</h2>
+        <p class="section-subtitle mx-auto">Every metric updates continuously as the AI learns from millions of signals.</p>
+      </div>
+
+      <div class="row g-4 mb-4">
+        <div class="col-md-6 col-xl-4">
+          <div class="dash-card reveal">
+            <div class="dash-card-head">
+              <div>
+                <span class="dash-label">Traffic Flow</span>
+                <div class="dash-value"><span id="trafficVal">0</span><small>%</small></div>
+              </div>
+              <div class="dash-icon icon-blue"><i class="fas fa-car"></i></div>
+            </div>
+            <div class="dash-bar"><span id="trafficBar" style="width:0%"></span></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="dash-card reveal">
+            <div class="dash-card-head">
+              <div>
+                <span class="dash-label">Energy Grid</span>
+                <div class="dash-value"><span id="energyVal">0</span><small>%</small></div>
+              </div>
+              <div class="dash-icon icon-purple"><i class="fas fa-bolt"></i></div>
+            </div>
+            <div class="dash-bar"><span id="energyBar" style="width:0%"></span></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="dash-card reveal">
+            <div class="dash-card-head">
+              <div>
+                <span class="dash-label">Air Quality Index</span>
+                <div class="dash-value"><span id="airVal">0</span><small>AQI</small></div>
+              </div>
+              <div class="dash-icon icon-green"><i class="fas fa-wind"></i></div>
+            </div>
+            <div class="dash-bar"><span id="airBar" style="width:0%"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="dash-card dash-card-large reveal">
+            <div class="dash-card-head">
+              <div>
+                <span class="dash-label">Population Served</span>
+                <div class="dash-value"><span id="popVal">0</span><small>citizens</small></div>
+              </div>
+              <div class="dash-icon icon-cyan"><i class="fas fa-users"></i></div>
+            </div>
+            <div class="dash-sparkline" id="popSparkline"></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="dash-card dash-card-large reveal">
+            <div class="dash-card-head">
+              <div>
+                <span class="dash-label">Transport Load</span>
+                <div class="dash-value"><span id="transportVal">0</span><small>%</small></div>
+              </div>
+              <div class="dash-icon icon-orange"><i class="fas fa-train"></i></div>
+            </div>
+            <div class="dash-sparkline" id="transportSparkline"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-4">
+        <div class="col-6 col-md-3">
+          <div class="circular-stat reveal">
+            <svg viewBox="0 0 120 120" class="circular-svg">
+              <circle cx="60" cy="60" r="52" class="circular-track"></circle>
+              <circle cx="60" cy="60" r="52" class="circular-fill fill-blue" data-percent="94"></circle>
+            </svg>
+            <div class="circular-value"><span class="circle-num" data-target="94">0</span>%</div>
+            <div class="circular-label">Signal AI</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="circular-stat reveal">
+            <svg viewBox="0 0 120 120" class="circular-svg">
+              <circle cx="60" cy="60" r="52" class="circular-track"></circle>
+              <circle cx="60" cy="60" r="52" class="circular-fill fill-purple" data-percent="87"></circle>
+            </svg>
+            <div class="circular-value"><span class="circle-num" data-target="87">0</span>%</div>
+            <div class="circular-label">Grid Balance</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="circular-stat reveal">
+            <svg viewBox="0 0 120 120" class="circular-svg">
+              <circle cx="60" cy="60" r="52" class="circular-track"></circle>
+              <circle cx="60" cy="60" r="52" class="circular-fill fill-cyan" data-percent="91"></circle>
+            </svg>
+            <div class="circular-value"><span class="circle-num" data-target="91">0</span>%</div>
+            <div class="circular-label">Safety Score</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="circular-stat reveal">
+            <svg viewBox="0 0 120 120" class="circular-svg">
+              <circle cx="60" cy="60" r="52" class="circular-track"></circle>
+              <circle cx="60" cy="60" r="52" class="circular-fill fill-green" data-percent="89"></circle>
+            </svg>
+            <div class="circular-value"><span class="circle-num" data-target="89">0</span>%</div>
+            <div class="circular-label">Transit Punctuality</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW SMART CITY AI WORKS ===== -->
+  <section id="howitworks" class="how-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">THE AI PIPELINE</span>
+        <h2 class="section-title">How Smart City AI Works</h2>
+        <p class="section-subtitle mx-auto">From the physical world to intelligent action in milliseconds.</p>
+      </div>
+
+      <div class="how-flow">
+        <div class="how-step reveal">
+          <div class="how-icon"><i class="fas fa-satellite-dish"></i></div>
+          <h5>Sensors</h5>
+          <p>Millions of IoT nodes capture traffic, air, energy, and people signals.</p>
+        </div>
+        <div class="how-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="how-step reveal">
+          <div class="how-icon"><i class="fas fa-database"></i></div>
+          <h5>Data</h5>
+          <p>Streams are unified, cleaned, and enriched in real time.</p>
+        </div>
+        <div class="how-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="how-step reveal">
+          <div class="how-icon"><i class="fas fa-brain"></i></div>
+          <h5>AI</h5>
+          <p>Deep models forecast demand and detect anomalies instantly.</p>
+        </div>
+        <div class="how-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="how-step reveal">
+          <div class="how-icon"><i class="fas fa-lightbulb"></i></div>
+          <h5>Decision</h5>
+          <p>Optimal actions are chosen across competing city priorities.</p>
+        </div>
+        <div class="how-arrow"><i class="fas fa-arrow-right"></i></div>
+        <div class="how-step reveal">
+          <div class="how-icon"><i class="fas fa-bolt"></i></div>
+          <h5>Action</h5>
+          <p>Signals, grids, and services adapt automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATISTICS SECTION ===== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="stat-block reveal">
+            <div class="stat-value"><span class="stat-counter" data-target="12">0</span>M+</div>
+            <div class="stat-label">IoT Sensors Connected</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="stat-block reveal">
+            <div class="stat-value"><span class="stat-counter" data-target="850">0</span>+</div>
+            <div class="stat-label">AI Models Running</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="stat-block reveal">
+            <div class="stat-value"><span class="stat-counter" data-target="320">0</span>+</div>
+            <div class="stat-label">Cities Deployed</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="stat-block reveal">
+            <div class="stat-value"><span class="stat-counter" data-target="45">0</span>%</div>
+            <div class="stat-label">Avg. Carbon Reduction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FUTURISTIC GALLERY ===== -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">VISUAL INTELLIGENCE</span>
+        <h2 class="section-title">Inside the Smart City</h2>
+        <p class="section-subtitle mx-auto">A glimpse of the connected infrastructure shaping tomorrow.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="gallery-card reveal">
+            <div class="gallery-img">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&auto=format&fit=crop&q=80" alt="Smart traffic">
+            </div>
+            <div class="gallery-body">
+              <span class="gallery-tag">TRAFFIC</span>
+              <h5>Adaptive Signal Grid</h5>
+              <p>Every junction learns from the last 60 seconds of flow.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="gallery-card reveal">
+            <div class="gallery-img">
+              <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&auto=format&fit=crop&q=80" alt="Smart energy">
+            </div>
+            <div class="gallery-body">
+              <span class="gallery-tag">ENERGY</span>
+              <h5>Self-Balancing Grid</h5>
+              <p>Renewables and storage trade power in real time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="gallery-card reveal">
+            <div class="gallery-img">
+              <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&auto=format&fit=crop&q=80" alt="Smart transport">
+            </div>
+            <div class="gallery-body">
+              <span class="gallery-tag">TRANSPORT</span>
+              <h5>Multi-Modal AI</h5>
+              <p>One seamless journey across every mode of transit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="gallery-card reveal">
+            <div class="gallery-img">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop&q=80" alt="Public safety">
+            </div>
+            <div class="gallery-body">
+              <span class="gallery-tag">SAFETY</span>
+              <h5>Predictive Response</h5>
+              <p>Emergencies are anticipated, not just reacted to.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="gallery-card reveal">
+            <div class="gallery-img">
+              <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&auto=format&fit=crop&q=80" alt="Healthcare">
+            </div>
+            <div class="gallery-body">
+              <span class="gallery-tag">HEALTH</span>
+              <h5>Connected Care</h5>
+              <p>Rapid-response networks serve every neighborhood.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="gallery-card reveal">
+            <div class="gallery-img">
+              <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&auto=format&fit=crop&q=80" alt="Sustainability">
+            </div>
+            <div class="gallery-body">
+              <span class="gallery-tag">SUSTAINABILITY</span>
+              <h5>Zero-Waste Loops</h5>
+              <p>Collection routes and recycling close the loop.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIAL CAROUSEL ===== -->
+  <section class="testimonial-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">CITY LEADERS SPEAK</span>
+        <h2 class="section-title">Trusted by Forward-Thinking Cities</h2>
+      </div>
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial-card">
+              <i class="fas fa-quote-left testimonial-quote"></i>
+              <p class="testimonial-text">
+                "The AI traffic layer alone gave our residents back nearly 40 minutes a day. The NOVIXA team understood city life, not just models."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">MR</div>
+                <div>
+                  <div class="author-name">Maya Reyes</div>
+                  <div class="author-role">Chief Innovation Officer · Metro Nord</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <i class="fas fa-quote-left testimonial-quote"></i>
+              <p class="testimonial-text">
+                "We cut grid waste by 42% in the first year. The energy AI integrates with everything we already had — no rip and replace."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">AK</div>
+                <div>
+                  <div class="author-name">Arjun Kapoor</div>
+                  <div class="author-role">Director of Utilities · Helios City</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-card">
+              <i class="fas fa-quote-left testimonial-quote"></i>
+              <p class="testimonial-text">
+                "Public safety response times dropped by a third. The AI anticipates incidents instead of waiting for them to happen."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar">LN</div>
+                <div>
+                  <div class="author-name">Lina Novak</div>
+                  <div class="author-role">City Manager · Port Aurora</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ACCORDION ===== -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Questions from City Leaders</h2>
+      </div>
+
+      <div class="accordion faq-accordion mx-auto" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              How does NOVIXA integrate with existing city infrastructure?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Our platform is built to layer on top of what you already have. We provide open APIs and adapters for common SCADA, traffic, and utility systems, so no rip-and-replace is required.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Is citizen data protected and privacy-compliant?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes. All data is anonymized at the edge before it enters the AI pipeline. We are GDPR and CCPA compliant and support sovereign-cloud deployments.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              How quickly can we see measurable results?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Most cities see traffic efficiency gains within the first 90 days and energy savings inside six months, with a pilot zone live in 60 days.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+              What size city is a good fit for the platform?
+            </button>
+          </h2>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              We serve cities from 50,000 to 10 million residents. The platform scales elastically, and pricing is tiered so smaller municipalities can start with one or two solutions.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+              Do you provide ongoing support and model retraining?
+            </button>
+          </h2>
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Every deployment includes 24/7 monitoring, quarterly model retraining, and a dedicated city success engineer.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LARGE CTA ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-card reveal">
+        <div class="cta-glow"></div>
+        <h2 class="cta-title">Build the Intelligent City of Tomorrow.</h2>
+        <p class="cta-desc mx-auto">
+          Partner with NOVIXA to deploy AI that makes your city safer, greener, and more efficient — starting today.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="#contact" class="btn btn-primary btn-lg d-inline-flex align-items-center gap-2">
+            Start Your Smart City <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#dashboard" class="btn btn-outline-light btn-lg d-inline-flex align-items-center gap-2">
+            <i class="fas fa-city"></i> See Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="contact">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="footer-brand" href="#home">
+            <i class="fas fa-city"></i>NOVIXA<span class="brand-dot">.</span>AI
+          </a>
+          <p class="footer-desc">
+            AI Smart City Intelligence for cities that want to lead the next century of urban life.
+          </p>
+          <div class="social-links mt-3">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6>Product</h6>
+          <ul>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#citymap">City Map</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6>Company</h6>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6>Resources</h6>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Status</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6>Legal</h6>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Licenses</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <p class="footer-copy mb-0">© 2026 NOVIXA AI. All rights reserved.</p>
+        <p class="footer-copy mb-0">Made with <i class="fas fa-heart"></i> for smarter cities</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING ACTION BUTTON (FAB) ===== -->
+  <div class="fab-container" id="fabContainer">
+    <div class="fab-options" id="fabOptions">
+      <a href="tel:+1234567890" class="fab-option fab-phone" aria-label="Call us">
+        <i class="fas fa-phone-alt"></i>
+        <span class="fab-tooltip">Call Us</span>
+      </a>
+      <a href="https://wa.me/1234567890?text=Hello%20NOVIXA%2C%20I%20want%20to%20know%20more" 
+         target="_blank" rel="noopener noreferrer" class="fab-option fab-whatsapp" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="fab-tooltip">WhatsApp</span>
+      </a>
+      <a href="mailto:hello@novixa.ai" class="fab-option fab-email" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+        <span class="fab-tooltip">Email Us</span>
+      </a>
+    </div>
+    <button class="fab-main" id="fabMain" aria-label="Contact options" aria-expanded="false" type="button">
+      <i class="fas fa-headset"></i>
+    </button>
+  </div>
+
+  <!-- ===== BACK TO HOME BUTTON ===== -->
+  <button id="backHome" class="back-home" aria-label="Back to Home" type="button">
+    <i class="fas fa-house"></i>
+    <span class="back-home-tooltip">Back to Home</span>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="asserts/js/index.js"></script>
+</body>
+</html>
